@@ -1,0 +1,32 @@
+cpu: True
+data_dir: "../data/arrhythmia/"
+model_dir: "./model_checkpoints/"
+dataset: 'arrhythmia'
+n_gpu: 0
+save_dir: './logs/arrhythmia/'
+fp16_precision: False
+n_iters: 100
+seed: 1
+
+vae:
+  n_epochs: 250
+  batch_size: 64
+  alpha_infl: 0.05
+  n_random_train_sample: 64
+  tracin_layers: 4
+  step_size_CP: 10
+  reconstruct_num: 16
+  model_name: 'VAE'
+  hidden_sizes: [128, 256]
+  latent_dim: 32
+  n_encoder_layers: 1
+  n_decoder_layers: 1
+  resnet: False
+  batchnorm: True
+  lr: 1.e-4
+  weight_decay: 1.e-6
+  optimizer: 'SGD'
+  eps: 3.e-3
+  momentum: 0.1
+  dampening: 0.
+  nesterov: False

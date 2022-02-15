@@ -1,0 +1,32 @@
+cpu: True
+data_dir: "../data/kdd/"
+model_dir: "./model_checkpoints/"
+dataset: 'kdd'
+n_gpu: 1
+save_dir: './logs/kdd/'
+fp16_precision: True
+n_iters: 1
+seed: 1
+
+vae:
+  n_epochs: 200
+  batch_size: 128
+  reconstruct_num: 1
+  tracin_layers: 6
+  step_size_CP: 10
+  n_random_train_sample: 512
+  alpha_infl: 0.05
+  model_name: 'VAE'
+  hidden_sizes: [128, 256]
+  latent_dim: 32
+  n_encoder_layers: 5
+  n_decoder_layers: 5
+  resnet: False
+  batchnorm: True
+  lr: 1.e-7
+  weight_decay: 1.e-6
+  optimizer: 'SGD'
+  eps: 3.e-3
+  momentum: 0.
+  dampening: 0
+  nesterov: False

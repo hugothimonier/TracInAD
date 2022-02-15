@@ -1,0 +1,32 @@
+cpu: True
+data_dir: "../data/thyroid"
+model_dir: "./model_checkpoints/"
+dataset: 'thyroid'
+n_gpu: 0
+save_dir: './logs/thyroid/'
+fp16_precision: False
+n_iters: 100
+seed: 1
+
+vae:
+  n_epochs: 250
+  batch_size: 16
+  tracin_layers: 2
+  reconstruct_num: 16
+  step_size_CP: 10
+  n_random_train_sample: 64
+  alpha_infl: 0.05
+  model_name: 'VAE'
+  hidden_sizes: [64, 128]
+  latent_dim: 32
+  n_encoder_layers: 2
+  n_decoder_layers: 2
+  resnet: False
+  batchnorm: True
+  lr: 1.e-4
+  weight_decay: 1.e-6
+  optimizer: 'SGD'
+  eps: 3.e-3
+  momentum: 1.e-2
+  dampening: 0
+  nesterov: False
