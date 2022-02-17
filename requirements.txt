@@ -1,0 +1,7 @@
+omegaconf==2.1.1
+torch==1.10.0
+scikit-learn==0.24.2
+numpy==1.21.0
+pandas==1.2.5
+tqdm==4.62.2
+statsmodels==0.12.2
