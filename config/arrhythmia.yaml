@@ -5,7 +5,7 @@ dataset: 'arrhythmia'
 n_gpu: 0
 save_dir: './logs/arrhythmia/'
 fp16_precision: False
-n_iters: 100
+n_iters: 10
 seed: 1
 
 vae:
