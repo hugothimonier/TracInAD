@@ -8,13 +8,21 @@ bash ./data/data.sh
 `data.sh` requires `wget` to be installed. For Mac user, replace with `curl` in `data.sh`.
 
 
-To run the experiments, use the `requirements.txt` file to install the dependencies. Using `virtualenv`:
+To run the experiments, use the `requirements.txt` file to install the dependencies. 
+Using `virtualenv`:
 
 ```
 cd tracinad_wcci2022
 virtualenv tracinad_env
 source ./tracinad_env/bin/activate
 pip install -r requirements.txt
+```
+Using `conda`:
+```
+cd tracinad_wcci2022
+conda create -n tracinad_env
+conda activate tracinad_env
+conda install --file requirements.txt
 ```
 
 To run experiments:
