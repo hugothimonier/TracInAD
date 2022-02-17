@@ -1,4 +1,8 @@
+# TracInAD
+
 Repository containing the code for the experiments presented in `TracInAD : Measuring Influence for Anomaly Detection.`
+
+## Data
 
 To run experiments, datasets must be downloaded in folder `data`:
 ```
@@ -7,6 +11,7 @@ bash ./data/data.sh
 ```
 `data.sh` requires `wget` to be installed. For Mac user, replace with `curl` in `data.sh`.
 
+## Requirements 
 
 To run the experiments, use the `requirements.txt` file to install the dependencies. 
 Using `virtualenv`:
@@ -24,6 +29,8 @@ conda create -n tracinad_env
 conda activate tracinad_env
 conda install --file requirements.txt
 ```
+
+## Experiments
 
 To run experiments:
 ```
