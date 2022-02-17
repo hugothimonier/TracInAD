@@ -122,8 +122,7 @@ class BaselineDataset():
 
         train_label = np.zeros(len(train_data))
 
-        return TorchDataset((train_data, train_label), (val_data, val_label), self.model_name,
-                            self.d_out, self.n_rots, self.mode)
+        return TorchDataset((train_data, train_label), (val_data, val_label), self.mode)
 
     def Thyroid_train_valid_data(self,):
     
