@@ -21,8 +21,6 @@ To run experiments:
 ```
 cd tracinad_wcci2022
 source ./tracinad_env/bin/activate
-cd VAE
-python -u train.py -config ./config/arrhythmia.yaml > ./logs/arrhythmia/train.log
-python -u validation.py -config ./config/arrhythmia.yaml > ./logs/arrhythmia/train.log
+bash run.sh -d arrhythmia
 ```
 For other datasets, replace arrhythmia by a dataset contained in `[thyroid, arrhythmia, kdd, kddrev]`.
