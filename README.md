@@ -1,6 +1,6 @@
 # TracInAD
 
-Repository containing the code for the experiments presented in `TracInAD : Measuring Influence for Anomaly Detection.`
+Repository containing the code for the experiments of [TracInAD : Measuring Influence for Anomaly Detection](https://arxiv.org/abs/2205.01362) accepted in the proceedings of IJCNN 2022.
 
 ## Data
 
@@ -39,3 +39,15 @@ source ./tracinad_env/bin/activate
 bash run.sh -d arrhythmia
 ```
 For other datasets, replace arrhythmia by a dataset contained in `[thyroid, arrhythmia, kdd, kddrev]`.
+
+If you use this code, please cite us:
+```
+@misc{thimonier2022tracinad,
+      title={TracInAD: Measuring Influence for Anomaly Detection}, 
+      author={Hugo Thimonier and Fabrice Popineau and Arpad Rimmel and Bich-Liên Doan and Fabrice Daniel},
+      year={2022},
+      eprint={2205.01362},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
