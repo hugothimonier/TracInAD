@@ -1,5 +1,7 @@
 # TracInAD
 
+[![arXiv](https://img.shields.io/badge/arXiv-2205.01362-b31b1b.svg)](https://arxiv.org/abs/2205.01362)
+
 Repository containing the code for the experiments of [TracInAD : Measuring Influence for Anomaly Detection](https://arxiv.org/abs/2205.01362) accepted in the proceedings of IJCNN 2022.
 
 ## Data
