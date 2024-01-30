@@ -17,14 +17,14 @@ To run the experiments, use the `requirements.txt` file to install the dependenc
 Using `virtualenv`:
 
 ```
-cd tracinad_wcci2022
+cd TracInAD
 virtualenv tracinad_env
 source ./tracinad_env/bin/activate
 pip install -r requirements.txt
 ```
 Using `conda`:
 ```
-cd tracinad_wcci2022
+cd TracInAD
 conda create -n tracinad_env
 conda activate tracinad_env
 conda install --file requirements.txt
@@ -34,7 +34,7 @@ conda install --file requirements.txt
 
 To run experiments:
 ```
-cd tracinad_wcci2022
+cd TracInAD
 source ./tracinad_env/bin/activate
 bash run.sh -d arrhythmia
 ```
@@ -42,12 +42,13 @@ For other datasets, replace arrhythmia by a dataset contained in `[thyroid, arrh
 
 If you use this code, please cite us:
 ```
-@misc{thimonier2022tracinad,
-      title={TracInAD: Measuring Influence for Anomaly Detection}, 
-      author={Hugo Thimonier and Fabrice Popineau and Arpad Rimmel and Bich-Liên Doan and Fabrice Daniel},
-      year={2022},
-      eprint={2205.01362},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-}
+@inproceedings{Thimonier_2022,
+   title={Trac{I}n{AD}: Measuring Influence for Anomaly Detection},
+   url={http://dx.doi.org/10.1109/IJCNN55064.2022.9892058},
+   DOI={10.1109/ijcnn55064.2022.9892058},
+   booktitle={2022 International Joint Conference on Neural Networks (IJCNN)},
+   publisher={IEEE},
+   author={Thimonier, Hugo and Popineau, Fabrice and Rimmel, Arpad and Doan, Bich-Lien and Daniel, Fabrice},
+   year={2022},
+   month=jul }
 ```
